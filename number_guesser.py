@@ -1,12 +1,13 @@
 import random
 
-random_number = random.randint(1, 10)
+random_number = random.randint(0, 10)
 
 user_input = ''
 
 count = 0
 
 while (count < 10):
+     print("You have 10 tries to guess the computer's number.")
      user_input = input("Enter a number between 1 and 10: ")
      if user_input.isdigit() == False:
          print("That's not a valid number...")
